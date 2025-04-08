@@ -2,14 +2,15 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { motion, AnimatePresence } from "framer-motion"
 
 const navItems = [
-  { name: "サービス", href: "#services" },
-  { name: "サービスフロー", href: "#process" },
+  { name: "提供サービス", href: "#services" },
+  { name: "制作の流れ", href: "#process" },
   { name: "制作事例", href: "#works" },
   { name: "会社概要", href: "#company" },
   { name: "お問い合わせ", href: "#contact" },
@@ -50,14 +51,22 @@ export default function Header() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-white shadow-md py-2" : "bg-gradient-to-r from-[#2a9eac] to-[#30b4c5] py-4",
+        isScrolled ? "bg-white shadow-md py-0 " : "bg-white py-1.5",
       )}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container !px-2 md:!px-4 mx-auto flex justify-between items-center">
         <Link href="/" className="flex items-center">
-          <span className={cn("font-bold text-xl transition-colors", isScrolled ? "text-[#30b4c5]" : "text-white")}>
-            日本ルミカラー
-          </span>
+          <Image 
+            src="/images/logo.png" 
+            alt="日本ルミカラー" 
+            width={270} 
+            height={60} 
+            style={{ height: 'auto' }}
+            className={cn(
+              "transition-opacity w-[200px] md:w-[270px]",
+              isScrolled ? "opacity-100" : "opacity-100"
+            )}
+          />
         </Link>
 
         {/* デスクトップナビゲーション */}
@@ -68,9 +77,9 @@ export default function Header() {
                 <Link
                   href={item.href}
                   className={cn(
-                    "font-medium transition-colors hover:text-[#ff7a00]",
-                    isScrolled ? "text-gray-700" : "text-white",
-                    activeSection === item.href.substring(1) && "text-[#ff7a00] font-bold",
+                    "font-medium transition-colors hover:text-[#e94e1b]",
+                    "text-gray-700",
+                    activeSection === item.href.substring(1) && "text-[#e94e1b] font-bold",
                   )}
                   onClick={(e) => {
                     e.preventDefault()
@@ -89,7 +98,7 @@ export default function Header() {
             ))}
           </ul>
           <Button
-            className="bg-[#ff7a00] hover:bg-[#e56e00] text-white transition-all duration-300 hover:shadow-lg"
+            className="bg-[#e94e1b] hover:bg-[#f26b3c] text-white transition-all duration-300 hover:shadow-lg"
             onClick={() => {
               const contactSection = document.getElementById("contact")
               if (contactSection) {
@@ -100,7 +109,7 @@ export default function Header() {
               }
             }}
           >
-            お問い合わせ
+            無料相談する
           </Button>
         </nav>
 
@@ -111,9 +120,9 @@ export default function Header() {
           aria-label={mobileMenuOpen ? "メニューを閉じる" : "メニューを開く"}
         >
           {mobileMenuOpen ? (
-            <X className={isScrolled ? "text-gray-700" : "text-white"} size={24} />
+            <X className="text-gray-700" size={24} />
           ) : (
-            <Menu className={isScrolled ? "text-gray-700" : "text-white"} size={24} />
+            <Menu className="text-gray-700" size={24} />
           )}
         </button>
       </div>
@@ -134,7 +143,7 @@ export default function Header() {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className="block py-4 px-4 rounded-md text-gray-700 hover:bg-gray-50 hover:text-[#30b4c5] transition-colors font-medium"
+                      className="block py-4 px-4 rounded-md text-gray-700 hover:bg-gray-50 hover:text-[#1a4d89] transition-colors font-medium"
                       onClick={(e) => {
                         e.preventDefault()
                         setMobileMenuOpen(false)
@@ -155,7 +164,7 @@ export default function Header() {
                 ))}
                 <li className="pt-4">
                   <Button
-                    className="w-full bg-[#ff7a00] hover:bg-[#e56e00] text-white py-3"
+                    className="w-full bg-[#e94e1b] hover:bg-[#f26b3c] text-white py-3"
                     onClick={() => {
                       setMobileMenuOpen(false)
                       setTimeout(() => {

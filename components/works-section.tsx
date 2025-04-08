@@ -19,82 +19,43 @@ import { X, CheckCircle } from "lucide-react"
 
 const works = [
   {
-    title: "不動産会社Webサイトリニューアル",
-    category: "Webサイト制作",
+    title: "飲食店ブランドサイト制作と集客支援",
+    category: "戦略的WEBサイト構築",
     image:
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
-    description: "コンバージョン率を重視したデザインで問い合わせ数が2倍に増加",
+      "/images/img_works_01.png",
+    description: "WEBサイト制作と集客戦略で客数が増加し、売上150%アップ",
     fullDescription:
-      "不動産会社のWebサイトをリニューアルし、ユーザビリティを向上させました。物件検索機能の改善やレスポンシブデザインの導入により、モバイルからの問い合わせが3倍に増加。SEO対策も同時に行い、オーガニック流入も50%増加しました。",
+      "老舗イタリアンレストランのWEBサイトをモバイルファーストで全面リニューアル。ブランドの世界観を伝える高品質な写真撮影から予約システム導入までトータルサポートしました。同時にSEO対策とGoogle MAP連携も実施し、検索上位表示を実現。さらにSNSマーケティングも展開し、若年層の新規顧客獲得にも成功。予約数増加と客単価向上により、リニューアル前と比較して売上が150%にアップしました。",
     results: [
-      "問い合わせ数が月間50件から100件に増加",
-      "モバイルからのアクセス率が40%から65%に向上",
-      "平均セッション時間が1分30秒から3分20秒に延長",
+      "予約数が月間40件から92件に増加",
+      "客単価が平均15%向上し、売上増加に貢献",
+      "Google検索での上位表示を実現し、オーガニック流入が150%増加",
     ],
   },
   {
-    title: "製造業向けマーケティング戦略",
-    category: "デジタルマーケティング",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3",
-    description: "BtoB向けのマーケティング戦略で新規顧客獲得数が150%増加",
+    title: "専門メディアサイトの全面リニューアル",
+    category: "デジタル集客戦略",
+    image:"/images/img_works_03.png",
+    description: "サイト構造とデザイン刷新でPV数150%増、広告収益も大幅アップ",
     fullDescription:
-      "製造業のクライアント向けにBtoBマーケティング戦略を立案・実行しました。ターゲット企業へのアプローチ方法を見直し、コンテンツマーケティングとリードナーチャリングを組み合わせた施策を展開。新規顧客獲得数が大幅に増加しました。",
+      "専門分野に特化したメディアサイトの全面リニューアルを実施。コンテンツ分析とユーザー行動調査に基づき、サイト構造とナビゲーションを抜本的に見直しました。モバイルファーストのデザインと高速化対応により、検索エンジンからの流入増加と回遊率向上を実現。広告表示最適化も同時に行い、広告収益も増加させています。",
     results: [
-      "ホワイトペーパーのダウンロード数が月間200件を達成",
-      "リード獲得コストが30%削減",
-      "商談化率が15%から25%に向上",
-    ],
+      "月間PV数が135%に増加し、広告収益が120%向上",
+       "検索エンジンからの流入が180%増加",
+        "モバイルでのコンバージョン率が45%改善"
+      ],
   },
   {
-    title: "ECサイト売上改善プロジェクト",
-    category: "インターネット環境調査",
-    image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
-    description: "ユーザビリティ改善とSEO対策で月間売上30%アップを実現",
+    title: "整体院の予約管理システム導入と業務改革",
+    category: "デジタル業務改革",
+    image:"/images/img_works_02.png",
+    description: "予約管理システム導入で業務工数70%削減、顧客満足度も向上",
     fullDescription:
-      "アパレルブランドのECサイトの売上改善プロジェクトを実施しました。ユーザビリティテストを行い、カート離脱率の高い箇所を特定。チェックアウトプロセスの簡略化や商品ページの改善を行い、コンバージョン率が大幅に向上しました。",
-    results: ["カート離脱率が65%から40%に改善", "平均注文単価が15%向上", "リピート購入率が25%増加"],
-  },
-  {
-    title: "飲食店チェーンのブランディング",
-    category: "Webサイト制作",
-    image:
-      "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3",
-    description: "統一感のあるブランディングで店舗認知度向上に貢献",
-    fullDescription:
-      "全国展開する飲食店チェーンのブランディングとWebサイトリニューアルを担当しました。ブランドイメージを一新し、各店舗の特色を活かしながらも統一感のあるデザインを実現。予約システムの導入により、オンライン予約率が大幅に向上しました。",
+      "地域密着型の整体院向けに、オンライン予約システムと顧客管理システムを統合導入。電話対応時間の削減により施術に集中できる環境を整備しました。また、顧客データ分析により効果的なリピート促進策を実施し、定期的な来院を促進。業務効率化と売上向上の好循環を生み出しています。",
     results: [
-      "Webサイト経由の予約数が200%増加",
-      "ブランド認知度調査で認知率が35%向上",
-      "SNSフォロワー数が3ヶ月で2倍に増加",
-    ],
-  },
-  {
-    title: "アパレルブランドのSNS運用",
-    category: "デジタルマーケティング",
-    image:
-      "https://images.unsplash.com/photo-1600878459108-617a253537e9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
-    description: "Instagram運用代行でフォロワー数が半年で3倍に増加",
-    fullDescription:
-      "新興アパレルブランドのSNS運用を代行し、Instagram戦略を立案・実行しました。ターゲット層に響くビジュアルコンテンツの制作とインフルエンサーマーケティングを組み合わせ、短期間でフォロワー数を大幅に増加させました。",
-    results: [
-      "Instagramフォロワーが5,000人から15,000人に増加",
-      "エンゲージメント率が業界平均の2倍を達成",
-      "SNS経由の売上が全体の35%を占めるまでに成長",
-    ],
-  },
-  {
-    title: "医療機関のWebサイト制作",
-    category: "Webサイト制作",
-    image:
-      "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3",
-    description: "患者さんに優しいUIデザインで予約数増加を実現",
-    fullDescription:
-      "総合病院のWebサイトをリニューアルし、患者さんに優しいUIデザインを実現しました。診療科目ごとの情報整理や予約システムの導入、アクセシビリティに配慮したデザインにより、Webサイトからの予約数が大幅に増加しました。",
-    results: [
-      "オンライン予約数が月間300件から800件に増加",
-      "サイト滞在時間が平均2分から4分30秒に延長",
-      "患者満足度調査でWebサイトの使いやすさが90%の評価",
+      "予約管理業務の工数が70%削減され、施術時間の確保に成功",
+      "電話対応時間が1日あたり平均2時間から30分に短縮",
+      "顧客データ活用によりリピート率が25%向上",
     ],
   },
 ]
@@ -118,7 +79,7 @@ export default function WorksSection() {
   }
 
   return (
-    <section id="works" className="py-16 bg-gray-50">
+    <section id="works" className="py-12 md:py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-12"
@@ -127,9 +88,9 @@ export default function WorksSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold mb-4">制作事例</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            当社がこれまでに手がけた制作事例をご紹介します。
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">制作事例</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-left md:text-center text-sm md:text-base">
+            当社がこれまでに手がけた制作事例をご紹介します。<br />
             様々な業種・業界のお客様のビジネス成長をサポートしてきました。
           </p>
         </motion.div>
@@ -145,46 +106,46 @@ export default function WorksSection() {
             <motion.div key={index} variants={itemVariants}>
               <Card className="h-full flex flex-col overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative h-48 w-full">
-                  <Image src={work.image || "/placeholder.svg"} alt={work.title} fill className="object-cover" />
+                  <Image src={work.image} alt={work.title} fill className="object-cover" />
                 </div>
-                <CardContent className="pt-6 flex-grow">
-                  <Badge className="mb-2 bg-[#30b4c5] hover:bg-[#30b4c5]">{work.category}</Badge>
-                  <h3 className="text-xl font-bold mb-2">{work.title}</h3>
-                  <p className="text-gray-600">{work.description}</p>
+                <CardContent className="pt-4 md:pt-6 flex-grow">
+                  <Badge className="mb-2 bg-[#1a4d89] hover:bg-[#1a4d89] text-xs md:text-base">{work.category}</Badge>
+                  <h3 className="text-lg md:text-xl font-bold mb-2">{work.title}</h3>
+                  <p className="text-gray-600 text-sm md:text-base">{work.description}</p>
                 </CardContent>
                 <CardFooter>
                   <Dialog>
                     <DialogTrigger asChild>
                       <Button
                         variant="outline"
-                        className="w-full border-[#30b4c5] text-[#30b4c5] hover:bg-[#30b4c5] hover:text-white transition-all duration-300"
+                        className="w-full border-[#1a4d89] text-[#1a4d89] hover:bg-[#1a4d89] hover:text-white transition-all duration-300"
                         onClick={() => setSelectedWork(work)}
                       >
                         詳細を見る
                       </Button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[600px] p-6 bg-white rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
-                      <DialogClose className="absolute right-4 top-4 rounded-full p-2 hover:bg-gray-100 transition-colors">
+                      <DialogClose className="absolute right-2 top-1 md:right-4 md:top-4 rounded-full p-2 hover:bg-gray-100 transition-colors">
                         <X className="h-5 w-5" />
                         <span className="sr-only">閉じる</span>
                       </DialogClose>
-                      <DialogHeader className="mb-4">
-                        <DialogTitle className="text-2xl font-bold text-gray-800">{work.title}</DialogTitle>
-                        <Badge className="w-fit mt-2 bg-[#30b4c5] hover:bg-[#30b4c5]">{work.category}</Badge>
+                      <DialogHeader className="mb-1 md:mb-4">
+                        <DialogTitle className="text-lg md:text-2xl font-bold text-gray-800 text-left">{work.title}</DialogTitle>
+                        <Badge className="w-fit mt-2 md:!mt-3 bg-[#1a4d89] hover:bg-[#1a4d89]">{work.category}</Badge>
                       </DialogHeader>
-                      <div className="relative h-60 w-full mt-4 rounded-md overflow-hidden">
+                      <div className="relative h-60 w-full md:mt-4 rounded-md overflow-hidden">
                         <Image src={work.image || "/placeholder.svg"} alt={work.title} fill className="object-cover" />
                       </div>
-                      <DialogDescription className="mt-6 text-base text-gray-700">
+                      <DialogDescription className="mt-0 md:mt-6 text-sm md:text-base text-gray-700">
                         {work.fullDescription}
                       </DialogDescription>
-                      <div className="mt-6">
-                        <h4 className="font-bold text-lg mb-3 text-gray-800">成果</h4>
+                      <div className="mt-2 md:mt-6">
+                        <h4 className="font-bold text:base md:text-lg mb-3 text-gray-800">成果</h4>
                         <ul className="space-y-3">
                           {work.results.map((result, i) => (
                             <li key={i} className="flex items-start">
-                              <CheckCircle className="h-5 w-5 text-[#30b4c5] mr-3 mt-0.5 flex-shrink-0" />
-                              <span className="text-gray-700">{result}</span>
+                              <CheckCircle className="h-5 w-5 text-[#1a4d89] mr-3 mt-0.5 flex-shrink-0" />
+                              <span className="text-gray-700 text-sm md:text-base">{result}</span>
                             </li>
                           ))}
                         </ul>

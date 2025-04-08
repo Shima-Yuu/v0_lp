@@ -68,7 +68,7 @@ html {
   top: 0;
   left: 0;
   height: 3px;
-  background-color: #ff7a00;
+  background-color: #e94e1b;
   z-index: 100;
   transition: width 0.3s ease;
 }

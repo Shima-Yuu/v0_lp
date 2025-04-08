@@ -15,7 +15,10 @@ export const metadata: Metadata = {
   description:
     "最新のWebマーケティング技術と制作サービスを提供する株式会社日本ルミカラー。インターネット環境調査からデジタルマーケティング、Webサイト制作まで幅広くサポートします。",
   keywords: "Webマーケティング, Web制作, デジタルマーケティング, SEO, インターネット環境調査",
-    generator: 'v0.dev'
+  robots: {
+    index: false,
+    follow: false,
+  }
 }
 
 export default function RootLayout({

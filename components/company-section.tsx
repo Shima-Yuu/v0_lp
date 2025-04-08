@@ -5,18 +5,18 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export default function CompanySection() {
   return (
-    <section id="company" className="py-16 bg-gray-50">
+    <section id="company" className="py-4 md:py-16 pb-12 md:pb-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-8 md:mb-12"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold mb-4">会社概要</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            日本ルミカラーは、Webマーケティングと制作のプロフェッショナル集団です。
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">会社概要</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-left md:text-center text-sm md:text-base">
+            日本ルミカラーは、Webマーケティングと制作のプロフェッショナル集団です。<br />
             お客様のビジネス成長を全力でサポートします。
           </p>
         </motion.div>
@@ -31,61 +31,88 @@ export default function CompanySection() {
           >
             <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200">
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-[#30b4c5]">基本情報</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-4 text-[#1a4d89]">基本情報</h3>
                 <table className="w-full">
                   <tbody>
                     <tr className="border-b border-gray-100">
-                      <th className="py-3 text-left font-medium text-gray-600 w-1/3">会社名</th>
-                      <td className="py-3">日本ルミカラー</td>
+                      <th className="py-3 text-left font-medium text-gray-600 w-1/3 text-sm md:text-base">会社名</th>
+                      <td className="py-3  text-sm md:text-base">株式会社日本ルミカラー</td>
                     </tr>
                     <tr className="border-b border-gray-100">
-                      <th className="py-3 text-left font-medium text-gray-600">設立</th>
-                      <td className="py-3">2015年4月</td>
+                      <th className="py-3 text-left font-medium text-gray-600 text-sm md:text-base">代表者</th>
+                      <td className="py-3 text-sm md:text-base">代表取締役 奥平雅人</td>
                     </tr>
                     <tr className="border-b border-gray-100">
-                      <th className="py-3 text-left font-medium text-gray-600">資本金</th>
-                      <td className="py-3">1,000万円</td>
+                      <th className="py-3 text-left font-medium text-gray-600 text-sm md:text-base">従業員数</th>
+                      <td className="py-3 text-sm md:text-base">3人(外部パートナー含む)</td>
                     </tr>
                     <tr className="border-b border-gray-100">
-                      <th className="py-3 text-left font-medium text-gray-600">代表取締役</th>
-                      <td className="py-3">山田 太郎</td>
+                      <th className="py-3 text-left font-medium text-gray-600 text-sm md:text-base">事業内容</th>
+                      <td className="py-3 text-sm md:text-base">
+                        ・化学品事業<br />
+                        ・デジタルソリューション事業
+                      </td>
                     </tr>
-                    <tr>
-                      <th className="py-3 text-left font-medium text-gray-600">従業員数</th>
-                      <td className="py-3">25名</td>
+                    <tr className="border-b border-gray-100">
+                      <th className="py-3 text-left font-medium text-gray-600 text-sm md:text-base">HP</th>
+                      <td className="py-3 text-sm md:text-base">
+                        <a 
+                          href="https://nihon-lumicolor.jp/" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-[#1a4d89] hover:text-[#e94e1b] underline transition-colors duration-200"
+                        >
+                          https://nihon-lumicolor.jp/
+                        </a>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-[#30b4c5]">所在地・連絡先</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-4 text-[#1a4d89]">所在地・連絡先</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
-                    <MapPin className="h-5 w-5 text-[#30b4c5] mr-3 mt-0.5" />
+                    <MapPin className="h-5 w-5 text-[#1a4d89] mr-3 mt-0.5" />
                     <div>
-                      <p className="font-medium">本社</p>
-                      <p className="text-gray-600">〒150-0002 東京都渋谷区渋谷1-1-1 渋谷ビル5F</p>
+                      <p className="font-medium text-sm md:text-base">本社</p>
+                      <p className="text-gray-600 text-sm md:text-base">〒173-0037 東京都板橋区小茂根2-3-2 103</p>
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <Phone className="h-5 w-5 text-[#30b4c5] mr-3 mt-0.5" />
+                    <Phone className="h-5 w-5 text-[#1a4d89] mr-3 mt-0.5" />
                     <div>
-                      <p className="font-medium">電話番号</p>
-                      <p className="text-gray-600">03-1234-5678</p>
+                      <p className="font-medium text-sm md:text-base">電話番号</p>
+                      <p className="text-gray-600 text-sm md:text-base">
+                        <span className="hidden md:block">03-6677-2804</span>
+                        <a 
+                          href="tel:0366772804" 
+                          className="md:hidden text-[#1a4d89] hover:text-[#e94e1b] underline transition-colors duration-200"
+                        >
+                          03-6677-2804
+                        </a>
+                      </p>
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <Mail className="h-5 w-5 text-[#30b4c5] mr-3 mt-0.5" />
+                    <Mail className="h-5 w-5 text-[#1a4d89] mr-3 mt-0.5" />
                     <div>
-                      <p className="font-medium">メールアドレス</p>
-                      <p className="text-gray-600">info@nihon-lumicolor.co.jp</p>
+                      <p className="font-medium text-sm md:text-base">メールアドレス</p>
+                      <p className="text-gray-600 text-sm md:text-base">
+                        <a 
+                          href="mailto:info@nihon-lumicolor.jp" 
+                          className="text-[#1a4d89] hover:text-[#e94e1b] underline transition-colors duration-200"
+                        >
+                          info@nihon-lumicolor.jp
+                        </a>
+                      </p>
                     </div>
                   </li>
                   <li className="flex items-start">
-                    <Clock className="h-5 w-5 text-[#30b4c5] mr-3 mt-0.5" />
+                    <Clock className="h-5 w-5 text-[#1a4d89] mr-3 mt-0.5" />
                     <div>
-                      <p className="font-medium">営業時間</p>
-                      <p className="text-gray-600">平日 9:00〜18:00（土日祝休）</p>
+                      <p className="font-medium text-sm md:text-base">営業時間</p>
+                      <p className="text-gray-600 text-sm md:text-base">平日 9:00〜18:00（土日祝休）</p>
                     </div>
                   </li>
                 </ul>
