@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button"
 
 export default function HeroSection() {
   return (
-    <section className="relative pt-24 pb-16 overflow-hidden">
+    <section className="relative pt-28 md:pt-32 pb-16 overflow-hidden">
       {/* 背景グラデーションとパターン */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#30b4c5] via-[#2a9eac] to-[#1e7d8a] z-0">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1a4d89] via-[#0f3b6f] to-[#082b57] z-0">
         <div
           className="absolute inset-0 opacity-10"
           style={{
@@ -31,15 +31,15 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              最先端のWebマーケティングで
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 md:leading-[1.4]">
+              デジタルの力で
               <br />
-              <span className="text-yellow-300">ビジネスを加速</span>させる
+              <span className="text-yellow-300">ビジネスの可能性</span>を拡げる
             </h1>
             <p className="text-lg md:text-xl mb-8">
-              インターネット環境調査からWebサイト制作、マーケティング戦略まで
+              調査・分析・制作・運用までワンストップ
               <br className="hidden md:block" />
-              あなたのビジネスを総合的にサポートします
+              確かな実績と技術であなたのビジネスを次のステージへ
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <motion.div
@@ -48,7 +48,7 @@ export default function HeroSection() {
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
                 <Button
-                  className="bg-gradient-to-r from-[#ff7a00] to-[#ff9a40] hover:from-[#e56e00] hover:to-[#ff7a00] text-white text-lg py-6 px-8 shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
+                  className="bg-gradient-to-r from-[#e94e1b] to-[#f26b3c] hover:from-[#d24418] hover:to-[#e45e32] text-white text-lg py-6 px-8 shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
                   onClick={() => {
                     const contactSection = document.getElementById("contact")
                     if (contactSection) {
@@ -59,7 +59,7 @@ export default function HeroSection() {
                     }
                   }}
                 >
-                  無料相談を申し込む
+                  無料相談する
                 </Button>
               </motion.div>
               <motion.div
@@ -69,7 +69,7 @@ export default function HeroSection() {
               >
                 <Button
                   variant="outline"
-                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#30b4c5] text-lg py-6 px-8 w-full sm:w-auto transition-all duration-300"
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0f3b6f] text-lg py-6 px-8 w-full sm:w-auto transition-all duration-300"
                   onClick={() => {
                     const servicesSection = document.getElementById("services")
                     if (servicesSection) {
@@ -80,7 +80,7 @@ export default function HeroSection() {
                     }
                   }}
                 >
-                  サービスを見る
+                  提供サービスを見る
                 </Button>
               </motion.div>
             </div>
@@ -91,10 +91,10 @@ export default function HeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative w-[600px] h-[300px] md:w-[700px] md:h-[350px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3"
-                alt="Webマーケティングのイメージ"
+                src="images/hero-image.png"
+                alt=""
                 fill
                 className="object-cover"
               />

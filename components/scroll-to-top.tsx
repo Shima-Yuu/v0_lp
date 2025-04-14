@@ -32,7 +32,7 @@ export default function ScrollToTop() {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="fixed bottom-6 right-6 z-40"
+          className="fixed bottom-5 right-3 md:bottom-6 md:right-6 z-40"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.5 }}
@@ -40,7 +40,7 @@ export default function ScrollToTop() {
         >
           <Button
             onClick={scrollToTop}
-            className="rounded-full w-12 h-12 bg-[#30b4c5] hover:bg-[#2a9eac] text-white shadow-lg p-0 flex items-center justify-center"
+            className="rounded-full w-10 h-10 md:w-12 md:h-12 bg-[#1a4d89] hover:bg-[#2a9eac] text-white shadow-lg p-0 flex items-center justify-center"
             aria-label="トップに戻る"
           >
             <ArrowUp className="h-5 w-5" />
